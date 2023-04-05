@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vstuck</title>
+        <link rel="stylesheet" type="text/css" href="VSASTUCKMAIN.CSS">
+        <style>
+            .main{
+                border: 5px outset #97c382;
+                background-color: #282828;
+                width: 1100px;
+                margin: auto;
+            }
+            .upperarea{
+                margin: auto;
+                width: 750px;
+            }
+            .grayarea{
+                width: 750px;
+                margin: auto;
+                background-color: #161616;
+            }
+            .photo{
+                width: 750px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .textbox{
+                width: 700px;
+                margin: auto;
+            }
+            .notimportant:hover {
+                animation: definetlynotimportant 4s infinite;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+            @keyframes definetlynotimportant {
+                from {color: #97c382;}
+                to {color: #ffa17f;}
+                }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <h1>Vstuck</h1>
+
+            <div class="upperarea">
+                <button id="audio-button">
+                    <audio id="audio-file" src="Audio/Page1.mp3"></audio>
+                    Play Audio
+                </button>
+                <img class="photo" src="Images/Page1.png.png" alt ="Image could not be found" >
+            </div>
+
+            <div class="grayarea">
+                <br>
+                <div class="textbox">
+                    <p class="chatpester"> -- gymnopedicElytra <span style="color: #97c382">[GE]</span> began pestering the group chat [V.S.A] at 7:12 -- </p>
+                    <p class="chat aegis"> [GE]: Guys, <span class="notimportant">we</span> need your help, it was a lie. There is nothing here, we don`t know where we are. It was a lie. </p>
+                    <p class="chatpester"> -- gymnopedicElytra <span style="color: #97c382">[GE]</span> ceased pestering the group chat [V.S.A] at 7:1∞ -- </p>
+                    <p class="chatpester"> -- citrusEntropy <span style="color: #ff9900">[CE]</span> started pestering the group chat [V.S.A] at 8:10 -- </p>
+                    <p class="chat apollo" > [CE]: What was that? Are you okay? </p>
+                    <p class="chatpester"> -- arcaneTerrorist <span style="color: #17c0b7">[AT]</span> started pestering the group chat [V.S.A] at 8:11 -- </p>
+                    <p class="chat atlas"> [AT]: It's probably some prank or a hacker, don`t give them attention that's what they want. </p>
+                    <p class="chat apollo"> [CE]: I guess. </p>
+                    <p class="chatpester"> -- citrusEntropy <span style="color: #ff9900">[CE]</span> ceased pestering the group chat [V.S.A] at 8:12 -- </p>
+                    <p class="chatpester"> -- arcaneTerrorist <span style="color: #17c0b7">[AT]</span> ceased pestering the group chat [V.S.A] at 8:12 -- </p>
+                    <br>
+                    <a href="Page2.html" class="next">> Begin</a>
+                </div>
+                <br>
+            </div>
+            <br>
+            <a href="" class="goback">Go Back</a>
+        </div>
+        
+        <script>
+            const button = document.querySelector("#audio-button");
+            const audio = document.querySelector("#audio-file");
+            button.addEventListener("click", function() {
+            audio.currentTime = 0;
+            audio.play();
+            });
+        </script>
+        
+    </body>
+</html>
+
+

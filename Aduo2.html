@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vstuck</title>
+        <link rel="stylesheet" type="text/css" href="VSASTUCKMAIN.CSS">
+        <style>
+            .main{
+                border: 5px outset #ff9900;
+                background-color: #282828;
+                width: 1100px;
+                margin: auto;
+            }
+            .upperarea{
+                margin: auto;
+                width: 800px;
+            }
+            .grayarea{
+                width: 800px;
+                margin: auto;
+                background-color: #161616;
+            }
+            .photo{
+                width: 800px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .textbox{
+                width: 700px;
+                margin: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <h1>Head to the roof</h1>
+            <div class="upperarea">
+                <img class="photo" src="Images/Aduo2" alt="Image could not be found" >
+            </div>
+            <div class="grayarea">
+                <br>
+                <div class="textbox">   
+                    <p class="storytext">
+                        Apollo and Atlas have an intense rivalry, this isn't because of some clear goal like being a better sports player or being smarter, it's a very vague rivalry which started when Apollo said it's a rivalry
+                        and Atlas went along with it. Since that day they fight relentlessy at every chance they get. Even on this day of meeting, they have to have showdown. These kind of battles aren't really bound by any rules or boundries. They are just that, showdowns. And their weapons of choice reflect this perfectly.
+                    </p>
+                    <a href="Aduo3.html" class="next">> Strife</a>
+                </div>
+                <br>
+            </div>
+            <br>
+            <a href="Aduo1.html" class="goback">Go Back</a>
+        </div>
+
+        <script>
+            const button = document.querySelector("#audio-button");
+            const audio = document.querySelector("#audio-file");
+        
+            button.addEventListener("click", function() {
+            audio.currentTime = 0;
+            audio.play();
+            });
+        </script>
+
+    </body>
+</html>

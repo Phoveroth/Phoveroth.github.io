@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vstuck</title>
+        <link rel="stylesheet" type="text/css" href="VSASTUCKMAIN.CSS">
+        <style>
+            .main{
+                border: 5px outset #00c878;
+                background-color: #282828;
+                width: 1100px;
+                margin: auto;
+            }
+            .upperarea{
+                margin: auto;
+                width: 800px;
+            }
+            .grayarea{
+                width: 800px;
+                margin: auto;
+                background-color: #161616;
+            }
+            .photo{
+                width: 800px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .textbox{
+                width: 700px;
+                margin: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <h1>Make your way to the HQ</h1>
+            <div class="upperarea">
+                <img class="photo" src="Images/HQ.jpg" alt="Image could not be found" >
+            </div>
+            <div class="grayarea">
+                <br>
+                <div class="textbox">   
+                    <p class="storytext"> Minutes after those texts were sent, Alp, Tarda, and Joseph met up and started heading to Voomy HQ. 
+                        They arrived to see that only 2 members that were missing were Apollo and Atlas.
+                    </p>
+                    <a href="Page4.html" class="next">> Meet Up</a>
+                </div>
+                <br>
+            </div>
+            <br>
+            <a href="Atrio2.html" class="goback">Go Back</a>
+        </div>
+
+        <script>
+            const button = document.querySelector("#audio-button");
+            const audio = document.querySelector("#audio-file");
+        
+            button.addEventListener("click", function() {
+            audio.currentTime = 0;
+            audio.play();
+            });
+        </script>
+        
+    </body>
+</html>

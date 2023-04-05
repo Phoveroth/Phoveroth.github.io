@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vstuck</title>
+        <link rel="stylesheet" type="text/css" href="VSASTUCKMAIN.CSS">
+        <style>
+            .main{
+                border: 5px outset #ffa17f;
+                background-color: #282828;
+                width: 1100px;
+                margin: auto;
+            }
+            .upperarea{
+                margin: auto;
+                width: 800px;
+            }
+            .grayarea{
+                width: 800px;
+                margin: auto;
+                background-color: #161616;
+            }
+            .photo{
+                width: 800px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .textbox{
+                width: 700px;
+                margin: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <h1>Dusty, Eri, Aegis</h1>
+            <div class="upperarea">
+
+                <button id="audio-button">
+                    <audio id="audio-file" src="Audio/Dtrio.mp3  "></audio>
+                    Play Audio
+                </button>
+
+                <img class="photo" src="Images/Dtrio.jpg" alt="Image could not be found" >
+            </div>
+            <div class="grayarea">
+                <br>
+                <div class="textbox">   
+                    <p class="storytext">
+                        Dusty and Eri have an unbreakable bond and are often found residing at each other's homes. 
+                        Today is one of those days, with Eri staying over at Dusty's. As they await their friend's coming, 
+                        they are eagarly talking about current, important, and crucial events.  
+                    </p>
+                    <p class="speak eri">Eri: Do you think iced tea is better? Or iced coffee? </p>
+                    <p class="speak dusty">Dusty: Hmmm, iced coffee?</p>
+                    <p class="speak eri">Eri: Why? </p>
+                    <p class="speak dusty">Dusty: It's just better man</p>
+                    <p class="speak eri">Eri: Ye </p>
+                    <p class="storytext">
+                        They have been close friends since they were kids, and because of their mutual interest in art they have a 
+                        deeper bond when it comes to artistic expression and understanding of the visual. Dusty has a dream of working on molecular biology and genetics
+                        and having art as a hobby, but Eri wants to pursue art school and make it her career. 
+
+                        Eri puts her hand in her pocket and takes out a folded piece of paper giving it to Dusty
+                    </p>
+                    <p class="speak eri">Eri: Here, I made something for you </p>
+                    <p class="storytext">
+                        When Dusty unfolds it they see that it is a drawing of them as their future careers working together in a split office. Dusty in a lab coat working on experiments and Eri 
+                        drawing beside them and making art.
+                    </p>
+                    <p class="speak dusty">Dusty: This is so sweet bro, come here</p>
+                    <p class="storytext">
+                        These words are followed by a nice hug. As the hug ends, they hear the door bell.
+                    </p>
+                    <p class="speak dusty">Dusty: That must be Aegis, let me go open the door</p>
+                    <p class="storytext">
+                        The door is opened to reveal the gentle giant that is Aegis, he is standing with a box in his hand presumably containing the weird machine he was talking about.
+                    </p>
+                    <p class="speak aegis">Aegis: You guys ready to go?</p>
+                    <p class="speak dusty">Dusty: Not really, but we still have some time before we need to go. Wanna listen to some music and draw?</p>
+                    <p class="speak aegis">Aegis: Yeah, that sounds pretty good actually</p>
+                    <a href="Dtrio2.html" class="next">> Chill out until its time</a>
+                </div>
+                <br>
+            </div>
+            <br>
+            <a href="Page4.html" class="goback">Go Back</a>
+        </div>
+
+        <script>
+            const button = document.querySelector("#audio-button");
+            const audio = document.querySelector("#audio-file");
+        
+            button.addEventListener("click", function() {
+            audio.currentTime = 0;
+            audio.play();
+            });
+        </script>
+
+    </body>
+</html>

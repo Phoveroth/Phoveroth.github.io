@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vstuck</title>
+        <link rel="stylesheet" type="text/css" href="VSASTUCKMAIN.CSS">
+        <style>
+            .main{
+                border: 5px outset #17c0b7;
+                background-color: #282828;
+                width: 1100px;
+                margin: auto;
+            }
+            .upperarea{
+                margin: auto;
+                width: 750px;
+            }
+            .grayarea{
+                width: 750px;
+                margin: auto;
+                background-color: #161616;
+            }
+            .photo{
+                width: 750px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .textbox{
+                width: 700px;
+                margin: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <h1>Apollo, Atlas</h1>
+            <div class="upperarea">
+            <img class="photo" src="Images/Aduo1.png" alt ="Image could not be found" >
+            </div>
+            <div class="grayarea">
+                <br>
+                <div class="textbox">
+                    <p class="storytext"> Apollo was getting ready to start going towards the Voomy HQ, when he was interrupted by a text </p>
+                    <p class="chatpester"> -- arcaneTerrorist <span style="color: #17c0b7">[AT]</span> began pestering citrusEntropy  <span style="color: #ff9900">[CE]</span> at 11:12 -- </p>
+                    <p class="chat atlas"> [AT]: You, Me, on the roof. </p>
+                    <p class="chat apollo" > [CE]: I was bringing my weapon anyway, see you then. </p>
+                    <br>
+                    <a href="Aduo2.html" class="next">> Head to the roof</a>
+                </div>
+                <br>
+            </div>
+            <br>
+            <a href="Page4.html" class="goback">Go Back</a>
+        </div>
+
+        <script>
+            const button = document.querySelector("#audio-button");
+            const audio = document.querySelector("#audio-file");
+            button.addEventListener("click", function() {
+            audio.currentTime = 0;
+            audio.play();
+            });
+        </script>
+
+    </body>
+</html>

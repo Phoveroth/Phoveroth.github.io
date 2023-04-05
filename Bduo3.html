@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vstuck</title>
+        <link rel="stylesheet" href="VSASTUCKMAIN.CSS">
+        <style>
+            .main{
+                border: 5px outset #fac8d5;
+                background-color: #282828;
+                width: 1100px;
+                margin: auto;
+            }
+            .upperarea{
+                margin: auto;
+                width: 800px;
+            }
+            .grayarea{
+                width: 800px;
+                margin: auto;
+                background-color: #161616;
+            }
+            .photo{
+                width: 800px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .textbox{
+                width: 700px;
+                margin: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <h1>Head to HQ</h1>
+            <div class="upperarea">
+                <img class="photo" src="Images/Bduo2" alt="Image could not be found" >
+            </div>
+                <div class="grayarea">
+                    <br>
+                    <div class="textbox">   
+                        <p class="storytext">
+                            Pel and Coy soon arrived at the HQ to be greeted by Dusty, Eri, and Aegis.
+                        </p>
+                        <a href="Page4.html" class="next">> Meet up</a>
+                    </div>
+                    <br>
+                </div>
+            <br>
+            <a href="Bduo2.html" class="goback">Go Back</a>
+        </div>
+
+        <script>
+            const button = document.querySelector("#audio-button");
+            const audio = document.querySelector("#audio-file");
+        
+            button.addEventListener("click", function() {
+            audio.currentTime = 0;
+            audio.play();
+            });
+        </script>
+
+    </body>
+</html>

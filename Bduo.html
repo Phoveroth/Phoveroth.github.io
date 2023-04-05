@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vstuck</title>
+        <link rel="stylesheet" type="text/css" href="VSASTUCKMAIN.CSS">
+        <style>
+            .main{
+                border: 5px solid transparent;
+                background-color: #282828;
+                width: 1100px;
+                margin: auto;
+                border-image: linear-gradient(to right, #ff6363 0%, #fac8d5 100%);
+                border-image-slice: 1;
+            }
+            .upperarea{
+                margin: auto;
+                width: 800px;
+            }
+            .grayarea{
+                width: 800px;
+                margin: auto;
+                background-color: #161616;
+            }
+            .photo{
+                width: 800px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .textbox{
+                width: 700px;
+                margin: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <h1>Pel, Coy</h1>
+            <div class="upperarea">
+                <img class="photo" src="Images/Bduo1" alt="Image could not be found" >
+            </div>
+                <div class="grayarea">
+                    <br>
+                    <div class="textbox">   
+                        <p class="storytext">
+                            Pel and Coy were hanging out in Pel's front porch drinking a fruit cocktail that they have prepared
+                        </p>
+                        <p class="speak coy"> Coy: So what do you think this machine stuff is all about</p>
+                        <p class="speak pel"> Pel: aaaaa, I think it's just a way for Aegis to try to make Dusty and Apollo get along</p>
+                        <p class="speak coy"> Coy: Why would you say that, didn't they fight over text today because of the machine?</p>
+                        <p class="speak pel"> Pel: I feel like he will try to make them work together or something like that. Personally, I think them fighting here and there is fun.</p>
+                        <p class="speak coy"> Coy: I guess...</p>
+                        <p class="speak coy"> Coy: Well, do you want to go soon?</p>
+                        <p class="speak pel"> Pel: Yeah, oh I just got a text from piss chat</p>
+                        <a href="Bduo2.html" class="next">> Check piss chat</a>
+                    </div>
+                    <br>
+                </div>
+            <br>
+            <a href="Page4.html" class="goback">Go Back</a>
+        </div>
+
+        <script>
+            const button = document.querySelector("#audio-button");
+            const audio = document.querySelector("#audio-file");
+        
+            button.addEventListener("click", function() {
+            audio.currentTime = 0;
+            audio.play();
+            });
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vstuck</title>
+        <link rel="stylesheet" type="text/css" href="VSASTUCKMAIN.CSS">
+        <style>
+            .main{
+                border: 5px outset #204400;
+                background-color: #282828;
+                width: 1100px;
+                margin: auto;
+            }
+            .upperarea{
+                margin: auto;
+                width: 800px;
+            }
+            .grayarea{
+                width: 800px;
+                margin: auto;
+                background-color: #161616;
+            }
+            .photo{
+                width: 800px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .textbox{
+                width: 700px;
+                margin: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <h1>Joseph, Tarda, Alp</h1>
+            <div class="upperarea">
+
+                <button id="audio-button">
+                    <audio id="audio-file" src="Audio/Atrio1.mp3"></audio>
+                    Play Audio
+                </button>
+
+                <img class="photo" src="Images/Atrio1.jpg" alt="Image could not be found" >
+            </div>
+            <div class="grayarea">
+                <br>
+                <div class="textbox">   
+                    <p class="storytext">
+                        Before heading out to meet with Tarda and Alp, Joseph went out to his garden to feed his dogs. He had 4 dogs named, Cinnamon, Chuppy, Steak, and Demonbloodhound.
+                        Cinnamon and Chuppy are siblings and are both small sized and brown to orange color, steak is ironically a cream color and is the biggest of them all. Demonbloodhound is a white Bulldog.
+                        Joseph had 4 bowls in his hand respectively with varying foods depending on the dog. Demonbloodhound started jumping excitedly while the others awaited their meal with respect.
+                    </p>
+                    <p class="speak joseph">Joseph: I know you want to eat first Demmy but I must follow my order of feeding so step aside. </p>
+                    <p class="storytext">The first bowl contained a mix of seafood, it was Cinnamons favorite.</p>
+                    <p class="speak joseph">Joseph: Okay Cinnamon, here you go. Be a good boy while im gone.</p>
+                    <p class="storytext">Second bowl contained pork, Chuppys favorite</p>
+                    <p class="speak joseph">Joseph: Chuppy, look over everyone else and make sure they don't get into  trouble okay?</p>
+                    <p class="storytext">Third bowl was chicken wings, steaks.... favorite....</p>
+                    <p class="speak joseph">Joseph: Don't let them eat you all right doggy, youre the biggest so you have to hold back when playfighting, don't forget </p>
+                    <p class="storytext">And the fourth bowl, it had meat broth soup, because Demonbloodhounds bites arent strong enough that he has trouble with solid food.</p>
+                    <p class="speak joseph">Joseph: Don't forget demmy no bullying the others while im gone. Be nice.</p>
+                    <p class="storytext">It's not that the dogs were scared of Demonbloodhound, they just went along with it to make him feel strong.</p>
+                    <a href="Atrio2.html" class="next">> Check your texts</a>
+                </div>
+                <br>
+            </div>
+            <br>
+            <a href="Page4.html" class="goback">Go Back</a>
+        </div>
+
+        <script>
+            const button = document.querySelector("#audio-button");
+            const audio = document.querySelector("#audio-file");
+        
+            button.addEventListener("click", function() {
+            audio.currentTime = 0;
+            audio.play();
+            });
+        </script>
+
+    </body>
+</html>

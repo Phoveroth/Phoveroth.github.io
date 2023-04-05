@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vstuck</title>
+        <link rel="stylesheet" type="text/css" href="VSASTUCKMAIN.CSS">
+        <style>
+            .main{
+                border: 5px solid transparent;
+                background-color: #282828;
+                width: 1100px;
+                margin: auto;
+                background: linear-gradient(#282828, #282828) padding-box,
+                linear-gradient(to right, #ff9900, #17c0b7) border-box;
+            }
+            .upperarea{
+                margin: auto;
+                width: 800px;
+            }
+            .grayarea{
+                width: 800px;
+                margin: auto;
+                background-color: #161616;
+            }
+            .photo{
+                width: 800px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .textbox{
+                width: 700px;
+                margin: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <h1>Strife</h1>
+            <div class="upperarea">
+
+                <button id="audio-button">
+                    <audio id="audio-file" src="Audio/Aduo3.mp3"></audio>
+                    Play Audio
+                </button>
+
+                <img class="photo" src="Images/Aduo3.png" alt="Image could not be found" >
+            </div>
+            <div class="grayarea">
+                <br>
+                <div class="textbox">   
+                    <p class="storytext">
+                        Apollo made it to the roof and was faced with his everlong rival
+                    </p>
+                    <p class="speak apollo"> Apollo: This will make us late, you know that?</p>
+                    <p class="speak atlas"> Atlas: That may be the case, however a meet up can wait, but a showdown can't. </p>
+                    <p class="storytext">
+                        These words were followed by Apollos golf club hitting Atlas' katana, marking the beggining of the duel.
+                    </p>
+                    <a href="Page4.html" class="next">> Meet up</a>
+                </div>
+                <br>
+            </div>
+            <br>
+            <a href="Aduo2.html" class="goback">Go Back</a>
+        </div>
+
+        <script>
+            const button = document.querySelector("#audio-button");
+            const audio = document.querySelector("#audio-file");
+        
+            button.addEventListener("click", function() {
+            audio.currentTime = 0;
+            audio.play();
+            });
+        </script>
+        
+    </body>
+</html>
