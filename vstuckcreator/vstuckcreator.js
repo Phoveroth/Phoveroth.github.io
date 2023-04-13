@@ -57,9 +57,9 @@ function submit() {
   };
   x = x + ".upperarea{margin: auto;width: " + width.value + "px;}.grayarea{width: " + width.value + "px;margin: auto;background-color: #161616;}.photo{width: " + width.value + "px;display: block;margin-left: auto;margin-right: auto;}.textbox{width: 700px;margin: auto;}</style></head><body><div class='main'><h1>" + title.value + "</h1><div class='upperarea'>";
   if (sound.checked == true) {
-    x = x + "<button id='audio-button'><audio id='audio-file' src='Audio/" + sname.value + "'></audio>Play Audio</button>";
+    x = x + "<button id='audio-button'><audio id='audio-file' src='../Audio/" + sname.value + "'></audio>Play Audio</button>";
   };
-  x = x + "<img class='photo' src='Images/" + image.value + "' alt='Image could not be found' ></div><div class='grayarea'><br><div class='textbox'>";
+  x = x + "<img class='photo' src='../Images/" + image.value + "' alt='Image could not be found' ></div><div class='grayarea'><br><div class='textbox'>";
   for (let i = 0; i < texts.length; i++) {
     if (texts[i] == "s") {
       var storyy = document.getElementById("story" + i);
