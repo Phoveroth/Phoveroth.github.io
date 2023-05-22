@@ -32,7 +32,9 @@
             <br><a href='Page11.html' class='goback'>Go Back</a>
         </div>
         <script>
+            const button = document.querySelector('#audio-button');
             const audio = document.querySelector('#audio-file');
+            button.addEventListener('click', function() {audio.currentTime = 0;audio.play();});
             function autoNotify() {
             audio.play();
             }
