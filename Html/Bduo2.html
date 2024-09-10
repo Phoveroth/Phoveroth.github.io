@@ -33,10 +33,34 @@
                 width: 700px;
                 margin: auto;
             }
+            .persona5{
+                position: absolute;
+                margin: auto;
+                left: 0;
+                right: 0;
+                pointer-events: none;
+                opacity: 0;
+            }
+            .p5:hover{
+                color: red;
+            }
+            body:has(.p5:hover) .persona5{
+                animation: p5 4s;
+            }
+            @keyframes p5{
+                from{
+                    opacity: 1;
+                }
+                to{
+                    opacity: 0;
+                }
+            }
         </style>
     </head>
 
     <body>
+        <audio id="personaudio" src="../Audio/Persona5.mp3" preload="auto">audio</audio>
+        <img class="persona5" src="../Images/Persona5.jpg" alt="Image could not be found" >
         <div class="main">
             <h1>Check Piss Chat</h1>
             <div class="upperarea">
@@ -46,7 +70,7 @@
                     <br>
                     <div class="textbox">
                         <p class="chatpester"> -- bootlegRequiem <span style="color: #4179f1">[BR]</span> began pestering the group chat [Piss Chat] at 11:02 --</p>
-                        <p class="chat dusty"> [BR]: Me, Eri and Aegis are here at the HQ. Where have you been?</P>
+                        <p class="chat dusty"> [BR]: Me, Eri and Aegis are here at the HQ. <span id="p5" class="p5">Where have you been?</span></P>
                         <p class="chatpester"> -- freshStart <span style="color: #fac8d5">[FS]</span> began pestering the group chat [Piss Chat] at 11:05 --</p>
                         <P class="chat pel"> [FS]: We just left the house will be there in a bit.</p>
                         <P class="chat dusty"> [BR]: Okay hurry up we are waiting.</p>
@@ -63,13 +87,21 @@
         </div>
 
         <script>
-            const button = document.querySelector("#audio-button");
-            const audio = document.querySelector("#audio-file");
-        
-            button.addEventListener("click", function() {
-            audio.currentTime = 0;
-            audio.play();
-            });
+            var text = document.getElementById("p5");
+            var personaudio = document.getElementById("personaudio");
+
+            function play(){
+                personaudio.currentTime = 0;
+                personaudio.play();
+            };
+
+            function stop(){
+                personaudio.currentTime = 0;
+                personaudio.pause();
+            };
+            
+            text.addEventListener('mouseover', play);
+            text.addEventListener('mouseout', stop);
         </script>
 
     </body>
